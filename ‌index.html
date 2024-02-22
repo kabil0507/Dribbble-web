@@ -11,7 +11,7 @@
         <nav class="text-black bg-gray-100 p-4">
             <div class="flex justify-between items-center">
                 <img src="./pics/logo.png" alt="logo" class="h-12 pl-8">
-                <ul class="flex space-x-6  text-lg font-medium ">
+                <ul class="flex space-x-6  text-lg font-medium hidden hidden lg:flex">
                     <li><a href="#" class="text-slate-900  hover:bg-gray-300">Find talent</a></li>
                     <li><a href="#" class="text-slate-900  hover:bg-gray-300" target="_blank">inspiration</a></li>
                     <li><a href="#"  class="inline-flex w-full justify-center  bg-gray-100 px-3  text-lg font-medium text-slate-900 hover:bg-gray-300" >Learn design
@@ -23,8 +23,21 @@
                     <li><a href="#" class="text-slate-900  hover:bg-gray-300">Go Pro</a></li>
                 </ul>
                <div class="flex justify-between gap-6">
-                <div class="flex items-center space-x-4"><input type="text" placeholder="Search" class="px-2 py-1 border border-gray-300 rounded-full"></div>
-                <a href="#" class="py-2">Log in</a>
+                <div class="relative">
+                  <input
+                    class="appearance-none border-2 pl-10 transition-colors rounded-full w-full py-2 px-3 text-gray-800 leading-tight focus:outline-none focus:ring-blackfocus:border-purple-600 focus:shadow-outline"
+                    id="username"
+                    type="text"
+                    placeholder="Search..."
+                  />
+                  <div class="absolute left-0 inset-y-0 flex items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-3 text-gray-400 hover:text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                    </svg>
+                  </div>
+                  </div>
+                <a href="#" class="py-2 hidden lg:flex">Log in</a>
                 <a href="#" class="bg-slate-950 text-white px-4 py-1 rounded-full py-2">Sign up</a>
                </div> 
             </div>
@@ -80,7 +93,7 @@
 
     <form class="bg-gray-100">
         <h2 class="text-xl text-center font-medium font-serif text-gray-400 grid">Elegant Contact Form</h2>
-        <div class="flex justify-center gap-6 pt-6 sm:grid-rows-2">
+        <div class="mx-auto flex flex-cols-2 md:flex-cols-1 justify-center gap-6 pt-6 sm:flex-cols-">
         <div class="ml-10 lg:w-1/4">
             <input type="text" id="name" placeholder="Name" name="name" class="w-full  placeholder:text-xl placeholder:font-serif border p-4 rounded-md focus:outline-none focus:ring focus:border-blue-300 shadow-md">
             <br>
@@ -105,11 +118,11 @@
 
     <footer class="bg-black text-white py-4 p-14">
        
-  <div class="container p-10">
+  <div class="">
     <div class="border-b-2 border-gray-500 pb-4"></div>
-    <div class=" grid place-items-center md:grid-cols-3 lg:grid-cols-6">
+    <div class=" grid place-items-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
       
-      <div class="mb-4">
+      <div class="">
         <h3 class="text-lg font-semibold mb-2">Dropbox</h3>
         <ul>
           <li><a href="#">Desktop app</a></li>
@@ -123,7 +136,7 @@
         </ul>
       </div>
   
-      <div class="mb-4">
+      <div class="">
         <h3 class="text-lg font-semibold mb-2">Products</h3>
         <ul>
           <li><a href="#">Plus</a></li>
@@ -137,7 +150,7 @@
         </ul>
       </div>
       
-      <div class="mb-4">
+      <div class="">
         <h3 class="text-lg font-semibold mb-2">Features</h3>
         <ul>
           <li><a href="#">Send large files</a></li>
@@ -153,7 +166,7 @@
           
         </ul>
       </div>
-      <div class="mb-4">
+      <div class="">
         <h3 class="text-lg font-semibold mb-2">Support</h3>
         <ul>
           <li><a href="#">Help center</a></li>
@@ -168,7 +181,7 @@
           
         </ul>
       </div>
-      <div class="mb-4">
+      <div class="">
         <h3 class="text-lg font-semibold mb-2">Resources</h3>
         <ul>
           <li><a href="#">Blog</a></li>
@@ -184,7 +197,7 @@
 
         </ul>
       </div>
-      <div class="mb-4">
+      <div class="">
         <h3 class="text-lg font-semibold mb-2">Company</h3>
         <ul>
           <li><a href="#">About us</a></li>
