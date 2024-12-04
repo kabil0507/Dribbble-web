@@ -8,10 +8,20 @@
     <title>Dribble Website</title>
 </head>
 <body>
+  <div class="parallax"></div>
+
+<div class="content">
+  <h1>Parallax Example</h1>
+  <p>This is some content that scrolls over the parallax background.</p>
+</div>
+
     <main class=" mx-auto ">
         <nav class="text-black bg-gray-100 p-4">
             <div class="flex justify-between items-center">
-                <img src="./pics/logo.png" alt="logo" class="h-12 pl-8">
+              <div class="flex"><svg class="h-10 w-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg><img src="./pics/logo.png" alt="logo" class="h-12 pl-8"></div>
                 <div class="flex justify-end p-4"></div>
                   <ul class="flex space-x-6  text-lg font-medium  hidden lg:flex">
                     <li><a href="#" class="text-slate-900  hover:bg-gray-300">Find talent</a></li>
@@ -24,9 +34,9 @@
                     <li><a href="#" class="text-slate-900  hover:bg-gray-300">Jobs</a></li>
                     <li><a href="#" class="text-slate-900  hover:bg-gray-300">Go Pro</a></li>
                   </ul>
-               <div class="flex justify-between gap-6">
+               <div class="flex justify-between gap-10">
                 <div class="relative">
-                  <input class=" appearance-none border-2 pl-10 transition-colors rounded-full w-full py-2 px-3 text-gray-800 leading-tight focus:outline-none focus:ring-blackfocus:border-purple-600 focus:shadow-outline hidden lg:flex"id="username" type="text" placeholder="Search..."/>
+                  <input class=" appearance-none border-2 pl-10 transition-colors rounded-full w-full py-2 px-3 text-gray-800 leading-tight focus:outline-none focus:ring-blackfocus:border-purple-600 focus:shadow-outline hidden lg:block"id="username" type="text" placeholder="Search..."/>
                   <div class="absolute left-0 inset-y-0 flex items-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg" class="md:flex h-6 w-6 ml-3 text-gray-400 hover:text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
